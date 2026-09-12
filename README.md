@@ -1,8 +1,8 @@
-# InterviewIQ.AI
+# InterviewForge
 
 AI-powered mock interview practice built with React, Express, MongoDB, OpenRouter, Firebase, and Razorpay.
 
-InterviewIQ.AI helps candidates practice Technical and HR interviews, receive AI-generated feedback, track performance, and purchase additional interview credits.
+InterviewForge helps candidates practice Technical and HR interviews, receive AI-generated feedback, track performance, and purchase additional interview credits.
 
 > The detailed repository analysis and interview-preparation notes are available in [README_ANALYSIS.md](README_ANALYSIS.md).
 
@@ -199,7 +199,8 @@ POST /api/payment/verify
 - Paid plans add credits through Razorpay.
 - Payment signatures are verified on the server before credits are added.
 
-## Current Limitations
+
+<!--- ## Current Limitations
 
 - Interview questions are generated in advance; adaptive follow-up questions are not implemented.
 - Question timers are fixed at 60, 60, 90, 90, and 120 seconds.
@@ -209,4 +210,4 @@ POST /api/payment/verify
 - The client API URL and server CORS origin are configured for local development.
 - No automated test suite or production deployment configuration is included.
 
-See [README_ANALYSIS.md](README_ANALYSIS.md) for the complete architecture, security review, API details, scalability discussion, and interview questions.
+See [README_ANALYSIS.md](README_ANALYSIS.md) for the complete architecture, security review, API details, scalability discussion, and interview questions.-->
