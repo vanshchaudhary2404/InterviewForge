@@ -32,7 +32,7 @@ function Auth({isModel = false}) {
   return (
     <div className={`
       w-full 
-      ${isModel ? "py-4" : "min-h-screen bg-[#f3f3f3] flex items-center justify-center px-6 py-20"}
+    ${isModel ? "py-4" : "min-h-screen bg-transparent flex items-center justify-center px-6 py-20"}
     `}>
         <motion.div 
         initial={{opacity:0 , y:-40}} 
@@ -44,16 +44,16 @@ function Auth({isModel = false}) {
         bg-white shadow-2xl border border-gray-200
       `}>
             <div className='flex items-center justify-center gap-3 mb-6'>
-                <div className='bg-black text-white p-2 rounded-lg'>
+                <div className='bg-blue-600 text-white p-2 rounded-lg'>
                     <BsRobot size={18}/>
 
                 </div>
-                <h2 className='font-semibold text-lg'>InterviewIQ.AI</h2>
+                <h2 className='font-semibold text-lg'>InterviewForge</h2>
             </div>
 
             <h1 className='text-2xl md:text-3xl font-semibold text-center leading-snug mb-4'>
                 Continue with
-                <span className='bg-green-100 text-green-600 px-3 py-1 rounded-full inline-flex items-center gap-2'>
+                <span className='bg-blue-100 text-blue-700 px-3 py-1 rounded-full inline-flex items-center gap-2'>
                     <IoSparkles size={16}/>
                     AI Smart Interview
 

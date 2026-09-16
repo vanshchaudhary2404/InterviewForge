@@ -75,7 +75,7 @@ function Step1SetUp({ onStart }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
-            className='min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200 px-4'>
+            className='min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-sky-100 px-4'>
 
             <div className='w-full max-w-6xl bg-white rounded-3xl shadow-2xl grid md:grid-cols-2 overflow-hidden'>
 
@@ -83,7 +83,7 @@ function Step1SetUp({ onStart }) {
                     initial={{ x: -80, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.7 }}
-                    className='relative bg-gradient-to-br from-green-50 to-green-100 p-12 flex flex-col justify-center'>
+                    className='relative bg-gradient-to-br from-blue-50 to-sky-100 p-12 flex flex-col justify-center'>
 
                     <h2 className="text-4xl font-bold text-gray-800 mb-6">
                         Start Your AI Interview
@@ -99,15 +99,15 @@ function Step1SetUp({ onStart }) {
                         {
                             [
                                 {
-                                    icon: <FaUserTie className="text-green-600 text-xl" />,
+                                    icon: <FaUserTie className="text-blue-600 text-xl" />,
                                     text: "Choose Role & Experience",
                                 },
                                 {
-                                    icon: <FaMicrophoneAlt className="text-green-600 text-xl" />,
+                                    icon: <FaMicrophoneAlt className="text-blue-600 text-xl" />,
                                     text: "Smart Voice Interview",
                                 },
                                 {
-                                    icon: <FaChartLine className="text-green-600 text-xl" />,
+                                    icon: <FaChartLine className="text-blue-600 text-xl" />,
                                     text: "Performance Analytics",
                                 },
                             ].map((item, index) => (
@@ -148,7 +148,7 @@ function Step1SetUp({ onStart }) {
                             <FaUserTie className='absolute top-4 left-4 text-gray-400' />
 
                             <input type='text' placeholder='Enter role'
-                                className='w-full pl-12 pr-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-green-500 outline-none transition'
+                                className='w-full pl-12 pr-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition'
                                 onChange={(e) => setRole(e.target.value)} value={role} />
                         </div>
 
@@ -157,7 +157,7 @@ function Step1SetUp({ onStart }) {
                             <FaBriefcase className='absolute top-4 left-4 text-gray-400' />
 
                             <input type='text' placeholder='Experience (e.g. 2 years)'
-                                className='w-full pl-12 pr-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-green-500 outline-none transition'
+                                className='w-full pl-12 pr-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition'
                                 onChange={(e) => setExperience(e.target.value)} value={experience} />
 
 
@@ -166,7 +166,7 @@ function Step1SetUp({ onStart }) {
 
                         <select value={mode}
                             onChange={(e) => setMode(e.target.value)}
-                            className='w-full py-3 px-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-green-500 outline-none transition'>
+                            className='w-full py-3 px-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition'>
 
                             <option value="Technical">Technical Interview</option>
                             <option value="HR">HR Interview</option>
@@ -177,9 +177,9 @@ function Step1SetUp({ onStart }) {
                             <motion.div
                                 whileHover={{ scale: 1.02 }}
                                 onClick={() => document.getElementById("resumeUpload").click()}
-                                className='border-2 border-dashed border-gray-300 rounded-xl p-8 text-center cursor-pointer hover:border-green-500 hover:bg-green-50 transition'>
+                                className='border-2 border-dashed border-gray-300 rounded-xl p-8 text-center cursor-pointer hover:border-blue-500 hover:bg-blue-50 transition'>
 
-                                <FaFileUpload className='text-4xl mx-auto text-green-600 mb-3' />
+                                <FaFileUpload className='text-4xl mx-auto text-blue-600 mb-3' />
 
                                 <input type="file"
                                     accept="application/pdf"
@@ -239,7 +239,7 @@ function Step1SetUp({ onStart }) {
 
                                         <div className='flex flex-wrap gap-2'>
                                             {skills.map((s, i) => (
-                                                <span key={i} className='bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm'>{s}</span>
+                                                <span key={i} className='bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm'>{s}</span>
                                             ))}
                                         </div>
                                     </div>
@@ -254,7 +254,7 @@ function Step1SetUp({ onStart }) {
                             disabled={!role || !experience || loading}
                             whileHover={{ scale: 1.03 }}
                             whileTap={{ scale: 0.95 }}
-                            className='w-full disabled:bg-gray-600 bg-green-600 hover:bg-green-700 text-white py-3 rounded-full text-lg font-semibold transition duration-300 shadow-md'>
+                            className='w-full disabled:bg-gray-600 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-full text-lg font-semibold transition duration-300 shadow-md'>
                             {loading ? "Staring...":"Start Interview"}
 
 

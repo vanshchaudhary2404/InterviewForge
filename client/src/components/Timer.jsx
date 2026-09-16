@@ -10,9 +10,9 @@ function Timer({ timeLeft, totalTime }) {
         text={`${timeLeft}s`}
         styles={buildStyles({
           textSize: "28px",
-          pathColor: "#10b981",
-          textColor: "#ef4444",
-          trailColor: "#e5e7eb",
+          pathColor: "#2563eb",
+          textColor: "#1d4ed8",
+          trailColor: "#dbeafe",
         })}
         />
       

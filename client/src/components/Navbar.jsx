@@ -31,18 +31,18 @@ function Navbar() {
         }
     }
   return (
-    <div className='bg-[#f3f3f3] flex justify-center px-4 pt-6'>
+    <div className='bg-transparent flex justify-center px-4 pt-6'>
         <motion.div 
         initial={{opacity:0 , y:-40}}
         animate={{opacity:1 , y:0}}
         transition={{duration: 0.3}}
-        className='w-full max-w-6xl bg-white rounded-[24px] shadow-sm border border-gray-200 px-8 py-4 flex justify-between items-center relative'>
+        className='w-full max-w-6xl bg-white/90 rounded-[24px] shadow-sm border border-blue-100 px-8 py-4 flex justify-between items-center relative backdrop-blur'>
             <div className='flex items-center gap-3 cursor-pointer'>
-                <div className='bg-black text-white p-2 rounded-lg'>
+                <div className='bg-blue-600 text-white p-2 rounded-lg shadow-sm shadow-blue-200'>
                     <BsRobot size={18}/>
 
                 </div>
-                <h1 className='font-semibold hidden md:block text-lg'>InterviewIQ.AI</h1>
+                <h1 className='font-semibold hidden md:block text-lg text-blue-950'>InterviewForge</h1>
             </div>
 
             <div className='flex items-center gap-6  relative'>
